@@ -1,0 +1,312 @@
+/* Estilo Dark Moderno (Portfólio Tech) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0b0713;
+    color: #f1f5f9;
+    line-height: 1.7;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho com Foto Estilizada */
+.cabecalho {
+    background: #120d1c;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #a855f7;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.cabecalho h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* Botões de Contato Interativos */
+.links-contato {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+    .links-contato a {
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+/* Cores específicas para dar identidade aos botões */
+.btn-whatsapp {
+    background-color: #166534; /* Verde discreto corporativo */
+    border-color: #22c55e !important;
+}
+
+    .btn-whatsapp:hover {
+        background-color: #15803d;
+        transform: translateY(-2px);
+    }
+
+.btn-linkedin {
+    background-color: #1e3a8a; /* Azul LinkedIn */
+    border-color: #3b82f6 !important;
+}
+
+    .btn-linkedin:hover {
+        background-color: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+.btn-email {
+    background-color: #581c87; /* Roxo padrão tech */
+    border-color: #a855f7 !important;
+}
+
+    .btn-email:hover {
+        background-color: #6b21a8;
+        transform: translateY(-2px);
+    }
+
+/* Seções em Blocos Escuros */
+section {
+    background: #120d1c;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+    section h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 10px;
+    }
+
+    section p {
+        color: #94a3b8;
+        font-size: 0.95rem;
+    }
+
+/* Estilo das Tags / Badges de Habilidades (Pílulas) */
+.lista-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.tag {
+    background-color: #1e1533;
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+    .tag:hover {
+        background-color: #2e1a52;
+    }
+
+/* Cards de Experiência (Padrão Dark Card) */
+.card-experiencia {
+    background: #181226;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 4px solid #a855f7;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card-experiencia:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(168, 85, 247, 0.15);
+    }
+
+    .card-experiencia h4 {
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .card-experiencia .empresa {
+        font-weight: 500;
+        color: #c084fc;
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+
+    .card-experiencia .periodo {
+        font-size: 0.75rem;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+    }
+
+    .card-experiencia p {
+        color: #cbd5e1;
+        font-size: 0.9rem;
+    }
+/* Estilos para a Seção de Projetos */
+.lista-cards-projetos {
+    display: grid;
+    gap: 20px;
+}
+
+.card-projeto {
+    background: #181226;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card-projeto:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2);
+    }
+
+/* Estilização do Vídeo Nativo */
+.video-projeto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-projeto {
+    padding: 20px;
+}
+
+    .info-projeto h4 {
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .info-projeto p {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+/* Tags menores dentro do card de projeto */
+.tags-projeto {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+    .tags-projeto span {
+        background-color: #1e1533;
+        color: #c084fc;
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        border-radius: 12px;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+    }
+
+/* Botão do GitHub */
+.btn-github {
+    display: inline-block;
+    background-color: #272138;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.2s;
+}
+
+    .btn-github:hover {
+        background-color: #3b3054;
+        border-color: #a855f7;
+        transform: translateY(-1px);
+    }
+
+/* Cards de Experiência e Competências */
+.card-experiencia {
+    background: #181226;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 4px solid #a855f7;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card-experiencia:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(168, 85, 247, 0.15);
+    }
+
+    .card-experiencia h4 {
+        color: #ffffff;
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .card-experiencia .periodo {
+        font-size: 0.75rem;
+        color: #c084fc; /* Destaque roxo sutil para o período/foco */
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .card-experiencia p {
+        color: #cbd5e1;
+        font-size: 0.9rem;
+    }
