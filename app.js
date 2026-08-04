@@ -1,4 +1,3 @@
-// URL da nossa API C# (confira se a porta 5018 é a mesma que aparece no seu dotnet run)
 const API_URL = "http://meu-curriculo.somee.com/";
 
 async function carregarExperiencias() {
