@@ -1,5 +1,5 @@
 // URL da nossa API C# (confira se a porta 5018 é a mesma que aparece no seu dotnet run)
-const API_URL = "http://localhost:5018/api/Experiencias";
+const API_URL = "http://meu-curriculo.somee.com/";
 
 async function carregarExperiencias() {
     const container = document.getElementById("lista-experiencias");
