@@ -1,4 +1,4 @@
-const API_URL = "http://www.Meu-currículo.somee.com/";
+const API_URL = "https://www.Meu-currículo.somee.com/";
 
 async function carregarExperiencias() {
     const container = document.getElementById("lista-experiencias");
