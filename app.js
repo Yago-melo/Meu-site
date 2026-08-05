@@ -1,4 +1,4 @@
-const API_URL = "HTTPS://WWW.Meu-curriculo.somee.com/";
+const API_URL = "HTTP://WWW.Meu-curriculo.somee.com/";
 
 //https://www.Meu-currículo.somee.com/
 
