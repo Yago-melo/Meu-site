@@ -1,4 +1,4 @@
-const API_URL = "HTTP://WWW.Meu-curriculo.somee.com/api/experiencias";
+const API_URL = "HTTP://WWW.Meu-curriculo.somee.com/api/experiencias/";
 
 //https://www.Meu-currículo.somee.com/
 
