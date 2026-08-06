@@ -21,9 +21,25 @@ async function carregarExperiencias() {
             return;
         }
 
+       // Cria um card para cada experiência vinda do banco
         experiencias.forEach(exp => {
             const dataInicio = new Date(exp.dataInicio).toLocaleDateString('pt-BR', { month: '2-digit', year: 'numeric' });
-            // ... (mantenha a lógica de exibição que você já tinha ou salve essa base)
+            
+            // Verifica se tem data de fim, se não, coloca "Atual"
+            const dataFim = exp.dataFim ? new Date(exp.dataFim).toLocaleDateString('pt-BR', { month: '2-digit', year: 'numeric' }) : 'O momento';
+
+            // Monta a estrutura HTML (ajuste as classes CSS se as suas originais forem diferentes)
+            const cardHTML = `
+                <div class="experiencia-item" style="margin-bottom: 20px;">
+                    <h3 style="color: #a855f7;">${exp.cargo}</h3>
+                    <h4 style="margin-bottom: 10px;">${exp.empresa} | ${dataInicio} - ${dataFim}</h4>
+                    <p style="line-height: 1.6;">${exp.descricao}</p>
+                </div>
+                <hr style="border-color: #333; margin-bottom: 20px;">
+            `;
+            
+            // Injeta o card na tela
+            container.innerHTML += cardHTML;
         });
 
     } catch (error) {
