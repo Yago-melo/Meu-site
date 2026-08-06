@@ -33,7 +33,7 @@ async function carregarExperiencias() {
                 <div class="experiencia-item" style="margin-bottom: 20px;">
                     <h3 style="color: #a855f7;">${exp.cargo}</h3>
                     <h4 style="margin-bottom: 10px;">${exp.empresa} | ${dataInicio} - ${dataFim}</h4>
-                    <p style="line-height: 1.6;">${exp.descricao}</p>
+                    <p style="line-height: 1.6;">${exp.descricaoAtividades}</p>
                 </div>
                 <hr style="border-color: #333; margin-bottom: 20px;">
             `;
