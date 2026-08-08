@@ -310,3 +310,37 @@ section {
         color: #cbd5e1;
         font-size: 0.9rem;
     }
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imagem-carrossel {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.imagem-carrossel.ativa {
+    display: block;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.seta-esq { left: 8px; }
+.seta-dir { right: 8px; }
