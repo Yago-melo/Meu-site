@@ -49,6 +49,28 @@ async function carregarExperiencias() {
 
     carrossel.dataset.index = index;
 }
+
+function iniciarLoopVideo(idVideo) {
+    const video = document.getElementById(idVideo);
+    if (!video) return;
+
+    video.addEventListener('ended', () => {
+        video.currentTime = 0;
+        video.play();
+    });
+}
+
+iniciarLoopVideo('video-mario');function iniciarLoopVideo(idVideo) {
+    const video = document.getElementById(idVideo);
+    if (!video) return;
+
+    video.addEventListener('ended', () => {
+        video.currentTime = 0;
+        video.play();
+    });
+}
+
+iniciarLoopVideo('video-select_fighter');
             
             // Injeta o card na tela
             container.innerHTML += cardHTML;
