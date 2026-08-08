@@ -37,6 +37,18 @@ async function carregarExperiencias() {
                 </div>
                 <hr style="border-color: #333; margin-bottom: 20px;">
             `;
+
+            function mudarSlide(botao, direcao) {
+    const carrossel = botao.closest('.carrossel');
+    const imagens = carrossel.querySelectorAll('.imagem-carrossel');
+    let index = parseInt(carrossel.dataset.index);
+
+    imagens[index].classList.remove('ativa');
+    index = (index + direcao + imagens.length) % imagens.length;
+    imagens[index].classList.add('ativa');
+
+    carrossel.dataset.index = index;
+}
             
             // Injeta o card na tela
             container.innerHTML += cardHTML;
